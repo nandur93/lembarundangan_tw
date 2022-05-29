@@ -1,18 +1,34 @@
 {
   "name": "lembarundangan_tw",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lembar undangan dynamic menggunakan Framework Tailwind",
+  "private": "true",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
+    "build-webpack": "npx webpack --config webpack.config.js",
+    "ls-pub": "live-server public --port=8090"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Nandur Studio Event",
+  "license": "MIT",
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "daisyui": "^2.15.1"
-  }
+    "daisyui": "^2.15.1",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1"
+  },
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandur93/lembarundangan_tw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nandur93/lembarundangan_tw/issues"
+  },
+  "homepage": "https://github.com/nandur93/lembarundangan_tw#readme"
 }
